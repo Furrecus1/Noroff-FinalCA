@@ -12,11 +12,12 @@ import 'rxjs';
 export class HomePageComponent implements OnInit {
 
   public mtgcardsDetail: Array<any>;
-
+ 
   constructor(protected router: Router, protected mtgcardsService: MtgCardsService) {
    }
 
   ngOnInit() {
+    
     if (!sessionStorage.getItem('AuthToken')) {
       this.router.navigate(['/']);
     }
@@ -26,7 +27,10 @@ export class HomePageComponent implements OnInit {
       this.mtgcardsDetail = mtgcards.cards;
     });
     
+    
   }
+  
+  
  
 }
 

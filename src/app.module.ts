@@ -15,6 +15,7 @@ import { SearchComponent } from './components/search/search.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { SpecificPageComponent } from './pages/specific-page/specific-page.component';
+import { RemoveDupPipe } from './remove-dup.pipe';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SpecificPageComponent } from './pages/specific-page/specific-page.compo
     ContactComponent,
     SearchComponent,
     SpecificPageComponent,
+    RemoveDupPipe,
   ],
   imports: [
     BrowserModule,

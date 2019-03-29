@@ -10,7 +10,7 @@
 
 <section class="[ card-cont ]">
 
-<div class="[ card ]" *ngFor="let mtgcards of mtgcardsDetail | filter:term">
+<div class="[ card ]" *ngFor="let mtgcards of mtgcardsDetail | filter:term | removeDup">
   <h3>{{ mtgcards.name }}</h3>
     <img src="{{ mtgcards.imageUrl }}" alt="Magic the gathering cards"><br>
       <a [routerLink]="[ '/specific-page', { id: mtgcards.id }]">View more</a>

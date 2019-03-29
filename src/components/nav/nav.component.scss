@@ -1,6 +1,12 @@
 header {
     background: #7766FF;
     height: 60px;
+    .cont{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
     .logo {
         float: left;
         
@@ -33,7 +39,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 590px) {
     header{
         height: 100px;
         nav{
