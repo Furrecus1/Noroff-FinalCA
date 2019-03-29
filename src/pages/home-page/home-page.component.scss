@@ -1,12 +1,89 @@
 .card-cont {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2em;
+    margin-top: -40px;
     display: grid;
     grid-template-columns: auto auto auto;
-
         .card{
-            border: 1px solid black;
-            text-align: center;
+            box-shadow: 0px 2px 2px black;
+            margin: 5px;
+            
+            h3{
+                background: #7766FF;
+                color: white;
+                padding: 10px;
+                margin: 0;
+            }
+            img{
+                width: 100%;
+                max-width: 220px;
+               margin-top: 10px;
+               margin-bottom: -6px;
+                
+            }
+            a{
+                display: inline-block;
+                background: #7766FF;
+                padding: 8px;
+                font-size: 14px;
+                color: white;
+                margin: 10px;
+                font-weight: bold;
+            }
         }
 }
+
+section{
+    
+    text-align: center;
+
+    h1{
+        font-size: 48px;
+        margin: 20px;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+
+    input{
+        display: inline-block;
+        width: 70%;
+        max-width: 350px;
+        padding: 8px;
+        
+        
+    }
+
+    i{
+        color: white;
+        font-size: 18px;
+        padding: 7px 12px 10px 12px;
+        background: #7766FF;
+        
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+
+    .card-cont{
+        grid-template-columns: auto auto;
+    }
+
+}
+@media only screen and (max-width: 640px) {
+    section{
+        padding:35px 20px;
+        h1{
+            font-size: 36px;
+        }
+        h2{
+            font-size: 22px;
+        }
+    }
+
+    .card-cont{
+        grid-template-columns: auto;
+    }
+
+}
+
