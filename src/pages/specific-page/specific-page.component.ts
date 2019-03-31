@@ -1,26 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { MtgCardsService } from './../../services/mtg-cards.service';
+
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
   selector: 'app-specific-page',
   templateUrl: './specific-page.component.html',
-  styleUrls: ['./specific-page.component.scss'],
-  providers: [MtgCardsService]
+  styleUrls: ['./specific-page.component.scss']
 })
 export class SpecificPageComponent implements OnInit {
+  public mtgcardsName;
+  public sub;
+  public mtgcardsId;
 
-  public mtgcardsDetail: Array<any>;
-  
-
-  constructor( protected mtgcardsService: MtgCardsService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.mtgcardsService.getCards()
-    .subscribe(
-      mtgcards => {
-      this.mtgcardsDetail = mtgcards.cards;
-    });
+    this.sub = this.route.params.subscribe(params => {
+      this.mtgcardsId = params['name'];
+      });
+      console.log(this.mtgcardsId);
   }
 
 }

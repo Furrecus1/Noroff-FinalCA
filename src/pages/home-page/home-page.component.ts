@@ -32,7 +32,7 @@ export class HomePageComponent implements OnInit {
   }
 
   onSelect(mtgcards) {
-    this.router.navigate(['/specific-page', mtgcards.id]);
+    this.router.navigate(['/specific-page', mtgcards.name]);
   }
   
   
