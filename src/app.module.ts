@@ -11,11 +11,11 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { SearchComponent } from './components/search/search.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { SpecificPageComponent } from './pages/specific-page/specific-page.component';
 import { RemoveDupPipe } from './remove-dup.pipe';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +26,9 @@ import { RemoveDupPipe } from './remove-dup.pipe';
     NavComponent,
     AboutComponent,
     ContactComponent,
-    SearchComponent,
     SpecificPageComponent,
     RemoveDupPipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

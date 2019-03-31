@@ -1,3 +1,4 @@
+$blue-color: #7766FF;
 .card-cont {
     margin-top: -40px;
     display: grid;
@@ -7,7 +8,7 @@
             margin: 10px;
             
             h3{
-                background: #7766FF;
+                background: $blue-color;
                 color: white;
                 padding: 10px;
                 margin: 0;
@@ -19,14 +20,19 @@
                margin-bottom: -6px;
                 
             }
-            a{
-                display: inline-block;
-                background: #7766FF;
+            button{
+                background: $blue-color;
                 padding: 8px;
                 font-size: 14px;
                 color: white;
                 margin: 10px;
                 font-weight: bold;
+                border: none;
+                &:hover{
+                    background: white;
+                    color: $blue-color;
+                    box-shadow: 0px 2px 2px;
+                }
             }
         }
 }
@@ -56,7 +62,8 @@ section{
         color: white;
         font-size: 18px;
         padding: 7px 12px 10px 12px;
-        background: #7766FF;
+        background: $blue-color;
+        
         
     }
 }

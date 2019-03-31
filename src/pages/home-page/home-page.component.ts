@@ -26,8 +26,13 @@ export class HomePageComponent implements OnInit {
       mtgcards => {
       this.mtgcardsDetail = mtgcards.cards;
     });
+   
     
     
+  }
+
+  onSelect(mtgcards) {
+    this.router.navigate(['/specific-page', mtgcards.id]);
   }
   
   

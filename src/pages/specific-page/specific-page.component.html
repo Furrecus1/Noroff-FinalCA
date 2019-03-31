@@ -1,3 +1,12 @@
+<app-nav></app-nav>
+<section>
 <p>
   specific-page works!
 </p>
+
+<div class="[ card ]" *ngFor="let mtgcards of mtgcardsDetail | removeDup">
+  <h3>{{ mtgcards.name }}</h3>
+</div>
+
+</section>
+<app-footer></app-footer>
